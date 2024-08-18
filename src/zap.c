@@ -388,7 +388,6 @@ bhitm(struct monst *mtmp, struct obj *otmp)
                     pline("%s doesn't budge.", Monnam(mtmp));
             }
             if (!DEADMONSTER(mtmp)) {
-                wakeup(mtmp, !mindless(mtmp->data));
                 abuse_dog(mtmp);
             }
         } else if ((obj = which_armor(mtmp, W_SADDLE)) != 0) {
